@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Professor"
+    android:background="#417BBB">
+
+    <TextView
+        android:id="@+id/professor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Professor Login"
+        android:fontFamily="@font/clashcrotesksemibold"
+        android:textColor="#FFF"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/professor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/clashcrotesksemibold"
+        android:textSize="28sp"
+        android:textColor="#FFF"
+        android:text="Welcome!" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/student"
+        android:contentDescription="logo" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/clashcroteskmedium"
+        android:gravity="center"
+        android:text="Login or Signup Using Your Email And Password"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_text"
+        android:drawableLeft="@android:drawable/sym_action_email"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/clashcroteskmedium"
+        android:hint="Email"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_text"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/clashcroteskmedium"
+        android:hint="Password"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/professorId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_text"
+        android:drawableLeft="@android:drawable/checkbox_on_background"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/clashcroteskmedium"
+        android:hint="Professor ID"
+        android:padding="15dp"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginbutton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/professorId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#e4c16f"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:fontFamily="@font/clashcroteskmedium"
+        android:text="Login" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signupbutton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/loginbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#e4c16f"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:fontFamily="@font/clashcroteskmedium"
+        android:text="Signup" />
+
+</RelativeLayout>
